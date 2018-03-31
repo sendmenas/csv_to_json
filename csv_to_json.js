@@ -17,7 +17,7 @@ for (var i = 1; i < data.length; i++) {
 	jsonArr.push(contactObj);
 }
 
-const content = JSON.stringify(jsonArr);
+const content = JSON.stringify(jsonArr, null, 2);
 
 fs.writeFile("data.json", content);
 
